@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hyperlinks Demo – &lt;a&gt; tag, href & target Attributes</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 1rem; line-height: 1; }
+        h2   { color: #33502c; }
+        code { background: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
+        a    { text-decoration: none; color: #29709e; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <h1>How Hyperlinks Work</h1>
+
+    <h2>1. Basic External Link</h2>
+    <p>
+        Visit the
+        <a href="https://www.google.com">Google homepage</a>
+        (opens in same tab, default).
+    </p>
+
+    <h2>2. Open in New Tab (target="_blank")</h2>
+    <p>
+        Check
+        <a href="https://github.com" target="_blank">GitHub</a>
+        without leaving this page.
+    </p>
+
+    <h2>3. Link to a Specific Section Inside This Page</h2>
+    <p>
+        Jump to the
+        <a href="#bottom">bottom of the page</a>.
+    </p>
+
+    <h2>4. Download Link</h2>
+    <p>
+        <a href="sample.pdf" download>Download sample PDF</a>
+        (forces download instead of opening).
+    </p>
+
+    <h2>5. Email Link</h2>
+    <p>
+        Send feedback to
+        <a href="mailto:wasteman308@outlook.com?subject=Hello">feedback@outlook.com</a>.
+    </p>
+
+    <h2>6. Telephone Link</h2>
+    <p>
+        Call us at
+        <a href="tel:+1234567890">+1-234-567-890</a>.
+    </p>
+
+    <h2>7. Target Values Comparison</h2>
+    <ul>
+        <li><code>target="_self"</code> (default) – opens in same frame/tab.</li>
+        <li><code>target="_blank"</code> – opens in new tab/window.</li>
+        <li><code>target="_parent"</code> – opens in parent frame.</li>
+        <li><code>target="_top"</code> – opens in full body of the window.</li>
+    </ul>
+
+    <!-- dummy spacer -->
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <div id="bottom">
+        <hr>
+        <p>You arrived here via an internal hyperlink.</p>
+    </div>
+
+</body>
+</html>
